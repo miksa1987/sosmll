@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Thead, Tr, Th, Td, Link, Text } from "@chakra-ui/react";
+import { Table, Thead, Tr, Th, Td, Text } from "@chakra-ui/react";
 import { Link as LocalLink } from "react-router-dom";
 
 import { Link as ILink } from "../../domain/link";
