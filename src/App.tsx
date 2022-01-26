@@ -19,7 +19,7 @@ const Routing = () => {
 
 export const App = () => {
   const { checkUser, user } = useUser();
-  const { getLinks, links } = useLinks(user?.id ?? "");
+  const { getLinks } = useLinks(user?.id ?? "");
 
   useEffect(() => {
     setTimeout(checkUser, 1000)
@@ -30,7 +30,6 @@ export const App = () => {
       getLinks();
     }
   }, [user, getLinks]);
-  console.log(user, links)
 
   return (
     <ChakraProvider theme={theme}>
